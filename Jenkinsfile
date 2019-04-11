@@ -13,6 +13,6 @@ node {
     }
     stage('install chart'){
         echo 'creating an instance'   
-        terraformexec "webapp"
+        installchart "webapp"
     }
 }
