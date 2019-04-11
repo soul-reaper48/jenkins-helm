@@ -5,7 +5,7 @@ def call(String chart-name){
 	#create the helm chart
 	sh "helm create ${chart-name}"
 	
-	#make changes in values.yaml
+	//modify values.yaml
 	sh '''
 	cat <<EOF > helmcreate.sh
 	#!/bin/bash
